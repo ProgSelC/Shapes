@@ -28,7 +28,7 @@ public class Board {
 	}
 
 	public void printInf() {
-		int i = 0;
+		int i = 1;
 		
 		System.out.println();
 		
@@ -36,7 +36,7 @@ public class Board {
 			if (a == null) {
 				System.out.printf("Sector %d:\tFREE\n", i);
 			} else {
-				System.out.printf("Sector %d:\t%s\tSquare:\t%.2f\n", i+1, a
+				System.out.printf("Sector %d:\t%s\tSquare:\t%.2f\n", i, a
 						.getClass().getName().split("[.]")[1], a.calcSquare());
 			}
 			i++;
